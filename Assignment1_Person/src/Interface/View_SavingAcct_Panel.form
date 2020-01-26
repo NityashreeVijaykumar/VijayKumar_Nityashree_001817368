@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <Group type="103" groupAlignment="1" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="-2" pref="98" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Group type="103" alignment="1" groupAlignment="0" attributes="0">
+                              <Component id="BankAccNo" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="BankRoutingNo" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="BankName" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="103" alignment="1" groupAlignment="0" attributes="0">
+                              <Component id="AcctType" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="AccBalance" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                      <EmptySpace pref="102" max="32767" attributes="0"/>
+                      <Component id="Bank_Routing_No_Txt" min="-2" pref="116" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="SavingInfo" min="-2" max="-2" attributes="0"/>
+                          <Component id="BankName_Txt" alignment="1" min="-2" pref="116" max="-2" attributes="0"/>
+                          <Component id="AccType_Txt" alignment="1" min="-2" pref="116" max="-2" attributes="0"/>
+                          <Component id="AccNo_Txt" alignment="1" min="-2" pref="116" max="-2" attributes="0"/>
+                          <Component id="AcctBalance_Txt" alignment="1" min="-2" pref="116" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+              </Group>
+              <EmptySpace min="-2" pref="146" max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
+              <Component id="SavingInfo" min="-2" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="55" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="BankName" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="BankName_Txt" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="BankRoutingNo" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="AccType_Txt" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="35" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="BankAccNo" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="AccNo_Txt" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="AccBalance" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="AcctBalance_Txt" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="Bank_Routing_No_Txt" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="AcctType" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="AccBalance">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Account Balance:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="BankName_Txt">
+    </Component>
+    <Component class="javax.swing.JTextField" name="AccType_Txt">
+    </Component>
+    <Component class="javax.swing.JLabel" name="AcctType">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Account Type:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="SavingInfo">
+      <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Tahoma" size="24" style="1"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Saving Account Information"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="AccNo_Txt">
+    </Component>
+    <Component class="javax.swing.JTextField" name="AcctBalance_Txt">
+    </Component>
+    <Component class="javax.swing.JTextField" name="Bank_Routing_No_Txt">
+    </Component>
+    <Component class="javax.swing.JLabel" name="BankName">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Bank Name:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="BankRoutingNo">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Bank Routing No:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="BankAccNo">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Bank Account No:"/>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>
