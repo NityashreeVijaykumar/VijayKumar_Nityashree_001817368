@@ -222,43 +222,14 @@ public class AbnormalPanel extends javax.swing.JPanel {
 
     private void btnConfirmActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnConfirmActionPerformed
         // TODO add your handling code here:
-        btnConfirm.setEnabled(true);
-        int selectedRow = tableAbnormalVitalSigns.getSelectedRow();
-
-        if (selectedRow >= 0) {
-            VitalSigns vs = (VitalSigns) tableAbnormalVitalSigns.getValueAt(selectedRow, 0);
-            vs.setTemperature(Double.parseDouble(txtTemperature.getText()));
-            vs.setBloodPressure((Double.parseDouble(txtBloodPressure.getText())));
-            vs.setPulse(Integer.parseInt(txtPulse.getText()));
-            vs.setDate(txtDate.getText());
-
-            JOptionPane.showMessageDialog(null, "Signs updated");
-            populatetheTable();
-            setFieldEnabled(false);
-            btnConfirm.setEnabled(false);
-
-        } else {
-            JOptionPane.showMessageDialog(null, "Select a record");
-        }
+      
 
     }//GEN-LAST:event_btnConfirmActionPerformed
 
     private void btnUpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUpdateActionPerformed
         // TODO add your handling code here:
 
-        setFieldEnabled(true);
-        btnConfirm.setEnabled(true);
-        int selectedRow = tableAbnormalVitalSigns.getSelectedRow();
-
-        if (selectedRow >= 0) {
-            VitalSigns vs = (VitalSigns) tableAbnormalVitalSigns.getValueAt(selectedRow, 0);
-            txtTemperature.setText(vs.getTemperature() + "");
-            txtBloodPressure.setText(vs.getBloodPressure() + "");
-            txtPulse.setText(vs.getPulse() + "");
-            txtDate.setText(vs.getDate() + "");
-        } else {
-            JOptionPane.showMessageDialog(null, "Select a record");
-        }
+     
     }//GEN-LAST:event_btnUpdateActionPerformed
 
 
