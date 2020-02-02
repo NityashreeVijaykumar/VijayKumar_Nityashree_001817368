@@ -263,7 +263,31 @@ public class AbnormalPanel extends javax.swing.JPanel {
 
     private void btnUpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUpdateActionPerformed
         // TODO add your handling code here:
+   setFieldEnabled(true); 
 
+        btnConfirm.setEnabled(true); 
+
+        int selectedRow = tableAbnormalVitalSigns.getSelectedRow(); 
+
+  
+
+        if (selectedRow >= 0) { 
+
+            VitalSigns vs = (VitalSigns) tableAbnormalVitalSigns.getValueAt(selectedRow, 0); 
+
+            txtTemperature.setText(vs.getTemperature() + ""); 
+
+            txtBloodPressure.setText(vs.getBloodPressure() + ""); 
+
+            txtPulse.setText(vs.getPulse() + ""); 
+
+            txtDate.setText(vs.getDate() + ""); 
+
+        } else { 
+
+            JOptionPane.showMessageDialog(null, "Select a record"); 
+
+        } 
      
     }//GEN-LAST:event_btnUpdateActionPerformed
 
