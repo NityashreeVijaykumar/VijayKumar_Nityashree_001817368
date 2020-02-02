@@ -24,6 +24,8 @@ public class Patient {
         double systBP;
         double wKg;  
         double wPnd; 
+        String name;
+        
         System.out.println("How would you like to enter the age 1.Months 2.Years?");
         Scanner scan=new Scanner(System.in);
         int choice = scan.nextInt();
@@ -42,6 +44,9 @@ public class Patient {
             age=age*12;
         }
         
+        System.out.println("Enter the Name");
+        name=scan.next();
+        
         System.out.println("Enter Respiratory Rate");
         respRate=scan.nextDouble();
         
@@ -55,17 +60,17 @@ public class Patient {
         wKg=scan.nextDouble();
         wPnd=wKg*2.205;
         
-        VitalSigns vitalS = new  VitalSigns(age,respRate,heartRate,systBP,wKg,wPnd);
+        VitalSigns vitalS = new  VitalSigns(age,respRate,heartRate,systBP,wKg,wPnd,name);
         Abnormal ab= new Abnormal(vitalS);
         
         
         if(ab.isPatientNormal()==true){
-            System.out.println("Patient is Normal");
+            System.out.println("Patient's Vital Signs are Normal");
         
         }
         else
         {
-           System.out.println("Patient is Abnormal");  
+           System.out.println("Patient's Vital Signs are Abnormal");  
         }
         
         

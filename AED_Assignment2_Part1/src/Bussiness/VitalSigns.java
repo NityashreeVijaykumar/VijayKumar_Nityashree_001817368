@@ -17,14 +17,16 @@ public class VitalSigns {
     private double systBP;
     private double wKg;  
     private double wPnd; 
+    private String name;
 
-    public VitalSigns(int age, double respRate, double heartRate, double systBP, double wKg, double wPnd) {
+    public VitalSigns(int age, double respRate, double heartRate, double systBP, double wKg, double wPnd, String name) {
         this.age = age;
         this.respRate = respRate;
         this.heartRate = heartRate;
         this.systBP = systBP;
         this.wKg = wKg;
         this.wPnd = wPnd;
+        this.name=name;
     }
 
     public int getAge() {
@@ -74,6 +76,13 @@ public class VitalSigns {
 
     public void setwPnd(double wPnd) {
         this.wPnd = wPnd;
+    }
+     public String getname() {
+        return name;
+    }
+
+    public void setname(String name) {
+        this.name = name;
     }
 
     
