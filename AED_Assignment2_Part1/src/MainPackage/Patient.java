@@ -42,6 +42,7 @@ public class Patient {
            System.out.println("Enter Age");
             age=scan.nextInt(); 
             age=age*12;
+            
         }
         
         System.out.println("Enter the Name");
