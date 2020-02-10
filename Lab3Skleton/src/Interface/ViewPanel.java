@@ -13,7 +13,7 @@ import java.awt.Component;
 import javax.swing.JPanel;
 /**
  *
- * @author info
+ * @author nitya
  */
 public class ViewPanel extends javax.swing.JPanel {
 

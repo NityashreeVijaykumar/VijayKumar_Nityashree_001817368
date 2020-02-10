@@ -9,7 +9,7 @@ import java.awt.CardLayout;
 import javax.swing.JPanel;
 /**
  *
- * @author info
+ * @author nitya
  */
 public class MainJFrame extends javax.swing.JFrame {
 

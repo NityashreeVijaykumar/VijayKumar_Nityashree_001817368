@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author info
+ * @author nitya
  */
 public class ProductDirectory {
     

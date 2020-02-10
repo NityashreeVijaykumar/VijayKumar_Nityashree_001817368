@@ -9,7 +9,7 @@ import java.awt.CardLayout;
 import javax.swing.*;
 /**
  *
- * @author info
+ * @author nitya
  */
 public class ProdManagementPanel extends javax.swing.JPanel {
 

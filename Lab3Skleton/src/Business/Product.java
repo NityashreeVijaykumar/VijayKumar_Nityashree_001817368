@@ -7,7 +7,7 @@ package Business;
 
 /**
  *
- * @author info
+ * @author nitya
  */
 public class Product {
     private String name;
