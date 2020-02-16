@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 
 /**
  *
- * @author AEDSpring2019
+ * @author nitya
  */
 public abstract class User {
     private String password;

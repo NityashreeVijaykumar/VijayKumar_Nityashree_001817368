@@ -12,7 +12,7 @@ import java.time.LocalDateTime;
 
 /**
  *
- * @author AEDSpring2019
+ * @author nitya
  */
 public class Admin extends User {
     

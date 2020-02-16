@@ -12,7 +12,7 @@ import java.util.Date;
 
 /**
  *
- * @author AEDSpring2019
+ * @author nitya
  */
 public class Customer extends User implements Comparable<Customer> {
     
