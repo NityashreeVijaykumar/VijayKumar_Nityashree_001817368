@@ -162,13 +162,15 @@ public class AdminCreateScreen extends javax.swing.JPanel {
         String reenterpassword = txtRePword.getText();
 
         if (user == null || user.equals("")) {
-           
+           txtUser.setBorder(BorderFactory.createLineBorder(Color.RED));
             jLabel1.setForeground(Color.red);
+            
             JOptionPane.showMessageDialog(panelRight, "Username cannot be empty!");
             return;
         }
 
         if (!userNamePatternCorrect()) {
+            txtUser.setBorder(BorderFactory.createLineBorder(Color.RED));
             jLabel1.setForeground(Color.red);
             JOptionPane.showMessageDialog(panelRight, "Please use the correct pattern!");
             return;
@@ -177,12 +179,13 @@ public class AdminCreateScreen extends javax.swing.JPanel {
         
         if (!pwdPatternCorrect()) {
             jLabel2.setForeground(Color.red);
+            txtPword.setBorder(BorderFactory.createLineBorder(Color.RED));
             JOptionPane.showMessageDialog(panelRight, "Password is not following the required pattern!");
             return;
         }
 
         if (password == null || password.equals("")) {
-           
+           txtPword.setBorder(BorderFactory.createLineBorder(Color.RED));
             jLabel2.setForeground(Color.red);
             JOptionPane.showMessageDialog(panelRight, "Password cannot be empty!");
             return;
