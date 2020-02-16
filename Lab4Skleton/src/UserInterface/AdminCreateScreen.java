@@ -234,14 +234,14 @@ public class AdminCreateScreen extends javax.swing.JPanel {
     }
 
     boolean userNamePatternCorrect() {
-        Pattern p = Pattern.compile("^[a-zA-Z]+[a-zA-Z0-9]+[a-zA-Z0-9]+[a-zA-Z0-9]+[a-zA-Z0-9]");
+        Pattern p = Pattern.compile("^[a-zA-Z0-9]+_[a-zA-Z0-9]+@[a-zA-Z0-9]+.[a-zA-Z0-9]+$");
         Matcher m = p.matcher(txtUser.getText());
         boolean b = m.matches();
         return b;
     }
 
     boolean pwdPatternCorrect() {
-        Pattern p = Pattern.compile("^(?=.@*[A-Z])(?=.$*@[a-z])(?=.@*#\\d)(?=.@*[$*#&])[A-Za-z\\@d$]");
+        Pattern p = Pattern.compile("^(?=.*[A-Z])(?=.*[a-z])(?=.*\\d)(?=.*[$*#&])[A-Za-z\\d$*#&]{6,}$");
         Matcher m = p.matcher(txtPword.getText());
         boolean b = m.matches();
         return b;        // TODO add your handling code here:

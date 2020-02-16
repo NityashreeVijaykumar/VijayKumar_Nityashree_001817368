@@ -8,6 +8,7 @@ package Business.Users;
 import Business.Abstract.User;
 import Business.CustomerDirectory;
 import Business.SupplierDirectory;
+import java.time.LocalDateTime;
 
 /**
  *
@@ -19,7 +20,7 @@ public class Admin extends User {
     public CustomerDirectory custDir;
     
     public Admin() {
-        super("", "", "Admin");
+       super("", "", "Admin", LocalDateTime.now());
         suppDir = new SupplierDirectory();
         custDir = new CustomerDirectory();
     }

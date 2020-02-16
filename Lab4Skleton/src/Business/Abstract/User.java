@@ -5,6 +5,8 @@
  */
 package Business.Abstract;
 
+import java.time.LocalDateTime;
+
 /**
  *
  * @author AEDSpring2019
@@ -13,11 +15,13 @@ public abstract class User {
     private String password;
     private String userName;
     private String role;
+    private LocalDateTime myDate;
 
-    public User(String password, String userName, String role) {
+    public User(String password, String userName, String role,LocalDateTime myDate) {
         this.password = password;
         this.userName = userName;
         this.role = role;
+        this.myDate = myDate;
     }
 
     public String getPassword() {
@@ -26,6 +30,14 @@ public abstract class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+    
+      public LocalDateTime getMyDate() {
+        return myDate;
+    }
+
+    public void setMyDate(LocalDateTime myDate) {
+        this.myDate = myDate;
     }
 
     public String getUserName() {

@@ -20,7 +20,7 @@ public class Customer extends User implements Comparable<Customer> {
     private ProductDirectory directory;
     
     public Customer(String password, String userName, LocalDateTime myDate) {
-        super(password, userName,  "CUSTOMER");
+        super(password, userName,  "CUSTOMER",myDate) ;
         directory = new ProductDirectory();
     }
 
@@ -48,7 +48,5 @@ public class Customer extends User implements Comparable<Customer> {
         return false;
     }
 
-    public Object getmyDate() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
+ 
 }

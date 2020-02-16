@@ -133,7 +133,7 @@ public class AdminMainScreen extends javax.swing.JPanel {
             System.out.println(s);
             Object[] row = new Object[dtm.getColumnCount()];
             row[0] = s;
-            row[1] = s.getmyDate();
+            row[1] = s.getMyDate();
             dtm.addRow(row);
         }
 
